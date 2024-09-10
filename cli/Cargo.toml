@@ -1,0 +1,14 @@
+[package]
+name = "huione_rbpf_cli"
+version = "0.2.0"
+description = "CLI to test and analyze eBPF programs"
+authors = ["HUIONE Maintainers <maintainers@huione.com>"]
+repository = "https://github.com/huione-labs/rbpf"
+homepage = "https://huione.com/"
+keywords = ["BPF", "eBPF", "interpreter", "JIT"]
+edition = "2018"
+
+[dependencies]
+huione_rbpf = { path = "../", features = ["debugger"]  }
+huione_test_utils = { path = "../test_utils/" }
+clap = "=3.0.0-beta.2"
